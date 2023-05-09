@@ -1,0 +1,55 @@
+===========================
+Things to create / add:
+===========================
+
+    1.  add lang attribute to html element
+    2.  create meta element and append to the head
+    3.  create link element and append to the head
+    4.  create h1 element and append to the body
+    5.  create img element and append to the body
+    6.  create div element and append to the body
+    7.  create h2 element and append to the div
+
+===========================
+STEPS (for each element)
+===========================
+
+1. Create the element --  document.createElement('Name of Element');
+    EX: 
+        let div = document.createElement('div');
+        
+        ** Make sure to save it in a variable so you can use it!
+
+2. Set the attributes on that element  -- Element.setAttribute('attributeName', 'value');
+    EX:
+        div.setAttribute('onclick', 'doSomething()');
+
+3. Add any necessary classes to the element -- Element.classList.add("name-of-class");
+    EX:
+        div.classList.add('container');
+
+4. Add text (if the element needs it) -- Element.textContent = "some text";
+    EX:
+        div.TextContent = "I love DOM";
+
+5. Append the new element to its parent element -- Element.appendChild(newElement);
+    ** Remember, elements get appended to the bottom of the parent.
+    ** in other words, they get added as the Last Child of the parent element.
+    EX:
+        document.querySelector('main').appendChild(div);
+            OR
+        let main = document.querySelector('main');
+        main.appendChild(div);
+
+        ** Notice (div) does not have quotation marks around it.
+        ** Because it's a variable, NOT a string!
+
+===========================
+FINALLY
+===========================
+
+1. Create the function to change day / night
+    a. use a condition to check if it's currently day or night
+    b. set any necessary attributes
+    c. add / remove any necessary classes from the classList
+    d. update any necessary textContent 

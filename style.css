@@ -1,0 +1,43 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+    font-family: 'Nanum Myeongjo', serif;
+    background-color: rgb(223, 187, 177);
+
+}
+
+.addMore {
+    width: 201px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+div {
+    width: 201px;
+    margin: 10px;
+}
+
+
+img {
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px black
+}
+img:hover {
+    transform: scale(110%);
+}
+
+h3 {
+    border-bottom: 1px black solid;
+}
+
+header {
+    text-align: center;
+    height: 2em;
+    font-size: 2em;
+    background-color: rgb(245, 100, 118);
+}
